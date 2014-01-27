@@ -15,19 +15,20 @@ android {
 
     sourceSets {
         main {
-            manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = ['src']
-            res.srcDirs = ['res']
+            manifest.srcFile 'LazyList/AndroidManifest.xml'
+            java.srcDirs = ['LazyList/src']
+            res.srcDirs = ['LazyList/res']
         }
     }
 }
 
 dependencies {
+	compile 'com.android.support:support-v4:+'
 }
 
-group = ''
-version = ''
-def artifactId = ''
+group = 'com.thest1.lazylist'
+version = '1.0'
+def artifactId = 'library'
 
 def repositoryUrl
 if (has('repoDir')) {
